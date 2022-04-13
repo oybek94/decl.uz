@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../Sass/how-we-work/how-we-work.scss"
+    ],
+    "names": [],
+    "file": "how-we-work.css"
+}

@@ -418,7 +418,7 @@ img {
   background-color: rgba(144, 144, 144, 0.1);
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-bottom: 118px;
+  margin-bottom: 100px;
 }
 
 .header__nav {
@@ -525,6 +525,10 @@ img {
   line-height: 31px;
   text-align: center;
   text-decoration: none;
+}
+
+.discount {
+  margin-bottom: 100px;
 }
 
 .discount__wrapper {
