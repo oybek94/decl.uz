@@ -418,6 +418,7 @@ img {
   background-color: rgba(144, 144, 144, 0.1);
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-bottom: 118px;
 }
 
 .header__nav {
@@ -509,7 +510,7 @@ img {
 .hero__desc {
   max-width: 610px;
   font-size: 24px;
-  line-height: 25px;
+  line-height: 32px;
   padding-bottom: 150px;
   margin: 0;
 }
@@ -524,5 +525,31 @@ img {
   line-height: 31px;
   text-align: center;
   text-decoration: none;
+}
+
+.discount__wrapper {
+  border-radius: 21px;
+  background: rgba(67, 139, 227, 0.1);
+  padding: 50px 125px;
+  background-image: url("/img/discount.svg");
+  background-repeat: no-repeat;
+  background-position: center right 100px;
+}
+
+.discount__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #001A49;
+}
+
+.discount__desc {
+  max-width: 670px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 36px;
 }
 /*# sourceMappingURL=main.css.map */
