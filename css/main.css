@@ -414,6 +414,15 @@ img {
   }
 }
 
+.section-title {
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 76px;
+  text-align: center;
+}
+
 .header {
   background-color: rgba(144, 144, 144, 0.1);
   padding-top: 40px;
@@ -613,8 +622,8 @@ img {
   margin-bottom: 40px;
   border-radius: 50%;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 12.375px 24.75px rgba(0, 0, 0, 0.11);
-          box-shadow: 0px 12.375px 24.75px rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   -webkit-transition: -webkit-box-shadow 0.4s ease;
   transition: -webkit-box-shadow 0.4s ease;
   transition: box-shadow 0.4s ease;
@@ -672,12 +681,64 @@ img {
   cursor: context-menu;
 }
 
-.section-title {
-  margin-top: 0;
-  margin-bottom: 80px;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 76px;
+.offers {
+  margin-bottom: 120px;
+}
+
+.offers__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
+  grid-gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.offers__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  -webkit-transition: -webkit-box-shadow 0.4s ease;
+  transition: -webkit-box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
+}
+
+.offers__item:hover {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: #438BE3;
+}
+
+.offers__item:hover .offers__item__title {
+  color: #FFFFFF;
+}
+
+.offers__item:hover .offers__item__icon {
+  -webkit-filter: drop-shadow(12px 12px 5px #4444dd);
+          filter: drop-shadow(12px 12px 5px #4444dd);
+}
+
+.offers__item__title {
+  font-size: 18px;
   text-align: center;
+  cursor: context-menu;
 }
 /*# sourceMappingURL=main.css.map */
