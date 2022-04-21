@@ -408,7 +408,37 @@ img {
   padding: 0 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1401px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .container {
     padding: 0 20px;
   }
