@@ -1,0 +1,57 @@
+.call {
+   background-color: $primary-color;
+   margin-bottom: 110px;
+}
+
+.call__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 48px 0;
+}
+
+.call__title {
+   flex: 0 1 50%;
+   margin: 0;
+   font-size: 36px;
+   line-height: 50px;
+   color: #fff;
+}
+
+.call__button {
+   position: relative;
+   padding: 15px;
+   padding-left: 62px;
+   border: 2px solid $white-color;
+   border-radius: 33px;
+   text-decoration: none;
+   color: $white-color;
+   font-weight: bold;
+   transition: background-color 0.4s ease-in-out;
+
+   &:hover {
+      background-color: $white-color;
+      color: #fff;
+      text-align: center;
+      box-shadow: 7px 9px 35px -6px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+   }
+
+   &:hover.call__button::after {
+      background-color: #fff;
+   }
+}
+
+.call__button::after {
+   content: '';
+   position: absolute;
+   background-image: url("/img/tel.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: transparent;
+   left: -1px;
+   top: 0;
+   width: 49px;
+   height: 49px;
+   border-radius: 50%;
+   border: 2px solid $white-color;
+}

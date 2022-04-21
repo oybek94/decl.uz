@@ -741,4 +741,72 @@ img {
   text-align: center;
   cursor: context-menu;
 }
+
+.call {
+  background-color: #438BE3;
+  margin-bottom: 110px;
+}
+
+.call__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 48px 0;
+}
+
+.call__title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  margin: 0;
+  font-size: 36px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.call__button {
+  position: relative;
+  padding: 15px;
+  padding-left: 62px;
+  border: 2px solid #ffffff;
+  border-radius: 33px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.call__button:hover {
+  background-color: #ffffff;
+  color: #fff;
+  text-align: center;
+  -webkit-box-shadow: 7px 9px 35px -6px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 9px 35px -6px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.call__button:hover.call__button::after {
+  background-color: #fff;
+}
+
+.call__button::after {
+  content: '';
+  position: absolute;
+  background-image: url("/img/tel.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  left: -1px;
+  top: 0;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
