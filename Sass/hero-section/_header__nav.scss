@@ -4,6 +4,12 @@
    align-items: center;
    margin-bottom: 150px;
 
+
+   //Laptops
+   @media screen and (min-width: 1201px) and (max-width: 1440px){
+      margin-bottom: 70px;
+   }
+
    //Small screens, laptops
    @media screen and (min-width: 769px) and (max-width: 1024px){
       margin-bottom: 70px;
