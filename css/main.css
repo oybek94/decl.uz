@@ -408,49 +408,19 @@ img {
   padding: 0 20px;
 }
 
-@media screen and (min-width: 1401px) {
-  .container {
-    padding: 0 20px;
-  }
-}
-
-@media screen and (min-width: 1201px) and (max-width: 1400px) {
-  .container {
-    padding: 0 20px;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-  .container {
-    padding: 0 20px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    padding: 0 20px;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .container {
-    padding: 0 20px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    padding: 0 20px;
-  }
-}
-
 .section-title {
   margin-top: 0;
   margin-bottom: 80px;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 76px;
   text-align: center;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .container {
+    padding: 0 80px;
+  }
 }
 
 .header {
@@ -480,7 +450,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 36px;
+  font-size: 2.25px;
   text-decoration: none;
   color: #438BE3;
   font-weight: bold;
@@ -540,7 +510,7 @@ img {
 .hero__title {
   padding-bottom: 36px;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 4.375rem;
   line-height: 129%;
   color: #272D4E;
   margin: 0;
@@ -548,7 +518,7 @@ img {
 
 .hero__desc {
   max-width: 610px;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 32px;
   padding-bottom: 150px;
   margin: 0;
@@ -560,7 +530,7 @@ img {
   background-color: #438BE3;
   color: #ffffff;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 31px;
   text-align: center;
   text-decoration: none;
@@ -591,7 +561,7 @@ img {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2.25px;
   line-height: 52px;
   text-transform: uppercase;
   color: #001A49;
@@ -600,7 +570,7 @@ img {
 .discount__desc {
   max-width: 670px;
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5px;
   line-height: 36px;
 }
 
@@ -683,7 +653,7 @@ img {
 }
 
 .how-we-work__item__header__text {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 500;
   line-height: 102px;
   color: #438BE3;
@@ -693,7 +663,7 @@ img {
   margin-top: 0;
   margin-bottom: 25px;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 40px;
 }
 
@@ -701,7 +671,7 @@ img {
   max-width: 400px;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
 }
 
@@ -767,7 +737,7 @@ img {
 }
 
 .offers__item__title {
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
   cursor: context-menu;
 }
@@ -796,7 +766,7 @@ img {
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   margin: 0;
-  font-size: 30px;
+  font-size: 1.875px;
   line-height: 50px;
   color: #fff;
 }
@@ -806,7 +776,7 @@ img {
   padding: 20px;
   padding-left: 75px;
   border: 2px solid #ffffff;
-  font-size: 22px;
+  font-size: 1.375px;
   border-radius: 50px;
   text-decoration: none;
   color: #ffffff;
@@ -891,14 +861,14 @@ img {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rempx;
   line-height: 125%;
   color: #001A49;
 }
 
 .adventages__desc {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #4F596A;
 }
