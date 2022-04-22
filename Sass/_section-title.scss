@@ -3,6 +3,11 @@
    margin-bottom: 80px;
    font-weight: bold;
    font-size: 3.125rem;
-   line-height: 76px;
+   line-height: 172%;
    text-align: center;
+
+   //Small screens, laptops
+   @media screen and (min-width: 769px) and (max-width: 1024px){
+      margin-bottom: 40px;
+   }
 }

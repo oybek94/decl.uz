@@ -5,6 +5,11 @@ html {
   @media screen and (min-width: 1025px) and (max-width: 1200px){
     font-size: 14px;
   }
+
+  //Small screens, laptops
+  @media screen and (min-width: 769px) and (max-width: 1024px){
+    font-size: 12px;
+  }
 }
 
 *,

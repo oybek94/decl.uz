@@ -5,6 +5,10 @@
    background-repeat: no-repeat;
    background-position: top -50px right -190px;
 
+      //Small screens, laptops
+      @media screen and (min-width: 769px) and (max-width: 1024px){
+         padding-bottom: 100px;
+      }
 }
 .hero__title {
    padding-bottom: 36px;
@@ -18,9 +22,15 @@
 .hero__desc {
    max-width: 610px;
    font-size: 1.5rem;
-   line-height: 32px;
+   line-height: 125%;
    padding-bottom: 150px;
    margin: 0;
+
+     //Small screens, laptops
+     @media screen and (min-width: 769px) and (max-width: 1024px){
+      max-width: 400px;
+      padding-bottom: 50px;
+   }
 }
 
 .button {

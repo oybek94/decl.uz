@@ -3,5 +3,11 @@
    padding-top: 40px;
    padding-bottom: 40px;
    margin-bottom: 100px;
+
+     //Small screens, laptops
+     @media screen and (min-width: 769px) and (max-width: 1024px){
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
 }
 
