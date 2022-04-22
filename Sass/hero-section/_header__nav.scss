@@ -8,7 +8,7 @@
 .header__nav__logo {
    display: flex;
    align-items: center;
-   font-size: 2.25px;
+   font-size: 2.25rem;
    text-decoration: none;
    color: $primary-color;
    font-weight: bold;
@@ -49,9 +49,13 @@
    background-position: center;
    background-color: transparent;
    left: -1px;
-   top: 0;
+   top: -1px;
    width: 49px;
-   height: 49px;
+   height: 50px;
    border-radius: 50%;
    border: 2px solid $primary-color;
+
+   @media screen and (max-width: 1200px){
+      height: 49px;
+   }
 }

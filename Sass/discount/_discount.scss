@@ -4,18 +4,22 @@
 .discount__wrapper {
    border-radius: 21px;
    background: rgba(67, 139, 227, 0.1);
-   padding: 50px 125px;
-   
+   padding: 40px 100px;
+   background-size: 500px;
    background-image: url("/img/discount.svg");
    background-repeat: no-repeat;
    background-position: center right 100px;
+
+   @media screen and (min-width: 1025px) and (max-width: 1200px){
+      padding: 40px 110px;
+   }
 }
 
 .discount__title {
    margin-top: 0;
-   margin-bottom: 30px;
+   margin-bottom: 20px;
    font-weight: bold;
-   font-size: 2.25px;
+   font-size: 2.25rem;
    line-height: 52px;
    text-transform: uppercase;
    color: #001A49;
@@ -24,6 +28,10 @@
 .discount__desc {
    max-width: 670px;
    margin: 0;
-   font-size: 1.5px;
+   font-size: 1.5rem;
    line-height: 36px;
+
+   @media screen and (min-width: 1025px) and (max-width: 1200px){
+      max-width: 400px;
+   }
 }
