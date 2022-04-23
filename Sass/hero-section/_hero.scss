@@ -15,6 +15,12 @@
    @media screen and (min-width: 769px) and (max-width: 1024px){
       padding-bottom: 100px;
    }
+
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+      background-size: contain;
+      background-position: bottom 50px left;
+   }
 }
 .hero__title {
    padding-bottom: 36px;
@@ -23,6 +29,11 @@
    line-height: 129%;
    color: $header-color;
    margin: 0;
+   
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+      font-size: 3rem;
+   }
 }
 
 .hero__desc {
@@ -36,6 +47,11 @@
      @media screen and (min-width: 769px) and (max-width: 1024px){
       max-width: 400px;
       padding-bottom: 50px;
+   }
+
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+      padding-bottom: 100px;
    }
 }
 

@@ -14,6 +14,11 @@
    @media screen and (min-width: 769px) and (max-width: 1024px){
       margin-bottom: 70px;
    }
+
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+      margin-bottom: 40px;
+   }
 }
 
 .header__nav__logo {
@@ -23,6 +28,11 @@
    text-decoration: none;
    color: $primary-color;
    font-weight: bold;
+ 
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+      font-size: 1.6rem;
+   }
 }
 
 .header__nav__logo__img {
@@ -32,7 +42,6 @@
 .header__tel-button {
    position: relative;
    padding: 15px;
-   padding-left: 62px;
    border: 2px solid $primary-color;
    border-radius: 33px;
    text-decoration: none;
@@ -47,27 +56,4 @@
       box-shadow: 7px 9px 35px -6px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
    }
 
-   &:hover.header__tel-button::after {
-      background-color: #fff;
-   }
-}
-
-.header__tel-button::after {
-   content: '';
-   position: absolute;
-   background-image: url("/img/tel.svg");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-color: transparent;
-   left: -1px;
-   top: -1px;
-   width: 49px;
-   height: 50px;
-   border-radius: 50%;
-   border: 2px solid $primary-color;
-   transition: all 0.4s ease;
-
-   @media screen and (max-width: 1200px){
-      height: 49px;
-   }
 }

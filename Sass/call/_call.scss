@@ -9,6 +9,11 @@
    align-items: center;
    padding-top: 48px;
    padding-bottom: 48px;
+
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+      flex-direction: column;
+   }
 }
 
 .call__title {
@@ -21,6 +26,13 @@
    //Small screens, laptops
    @media screen and (min-width: 769px) and (max-width: 1024px){
       flex-basis: 65%;
+   }
+
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+     flex-basis: 100%;
+     font-size: 1.5rem;
+     margin-bottom: 40px;
    }
 }
 

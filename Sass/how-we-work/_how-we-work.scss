@@ -59,20 +59,21 @@
 .line::before {
    content: '';
    position: absolute;
-   top: 50%;
-   right: 155%;;
-   width: 300px;
-   height: 0px;
-   opacity: 0.3;
-   border: 1px solid #C8C8C8; 
+   top: 40%;
+   right: 255%;;
+   width: 81px;
+   height: 36px;
+   background-image: url("/img/do-arrs.png");
+   background-position: 0 0;
+   animation: arrMove 6s infinite;
 
    @media screen and (min-width: 1201px) and (max-width: 1440px){
-      width: 200px;
+      
    }
 
    //Desktops, large screens
    @media screen and (min-width: 1025px) and (max-width: 1200px){
-      width: 150px;
+      right: 200%;
    }
 
    @media screen and (max-width: 1024px){
@@ -83,20 +84,32 @@
 .line::after {
    content: '';
    position: absolute;
-   top: 50%;
-   left: 155%;;
-   width: 300px;
-   height: 0px;
-   opacity: 0.3;
-   border: 1px solid #C8C8C8; 
+   top: 40%;
+   left: 270%;;
+   width: 81px;
+   height: 36px;
+   background-image: url("/img/do-arrs.png");
+   background-position: 0 0;
+   animation: arrMove 6s infinite;
+
+   @keyframes arrMove {
+      0% { background-position: 0 0; }
+    16% { background-position: 28px 0; }
+    33% { background-position: 58px 0; }
+    49% { background-position: 88px 0; }
+    66% { background-position: 118px 0; }
+    83% { background-position: 148px 0; }
+    100% { background-position: 178px 0; }
+   }
+   
 
    @media screen and (min-width: 1201px) and (max-width: 1440px){
-      width: 200px;
+      left: 230%;
    }
 
    //Desktops, large screens
    @media screen and (min-width: 1025px) and (max-width: 1200px){
-      width: 150px;
+      left: 200%;
    }
 
    @media screen and (max-width: 1024px){

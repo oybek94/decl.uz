@@ -20,6 +20,13 @@
       padding: 30px 60px;
       background-size: 300px;
    }
+
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+      padding: 15px 30px;
+      background-size: 150px;
+      background-position: top 15px right 30px;
+   }
 }
 
 .discount__title {
@@ -34,6 +41,12 @@
    //Small screens, laptops
    @media screen and (min-width: 769px) and (max-width: 1024px){
       margin-bottom: 10px;
+   }
+
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+      margin-bottom: 5px;
+      font-size: 2rem;
    }
 }
 
@@ -55,5 +68,11 @@
    //Small screens, laptops
    @media screen and (min-width: 769px) and (max-width: 1024px){
       max-width: 350px;
+   }
+
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+      max-width: 100%;
+      font-size: 1.2rem;
    }
 }

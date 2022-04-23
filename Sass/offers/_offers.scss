@@ -30,6 +30,21 @@
    &:hover .offers__item__icon {
       filter: drop-shadow(12px 12px 5px #4444dd);
    }
+
+   //Small screens, laptops
+   @media screen and (min-width: 769px) and (max-width: 1024px){
+      width: 32.3%;
+   }
+
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+      width: 48.8%;
+   }
+
+   //Mobile devices
+   @media screen and (min-width: 320px) and (max-width: 480px){
+      width: 100%;
+   }
 }
 
 .offers__link {

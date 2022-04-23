@@ -10,4 +10,9 @@
    @media screen and (min-width: 769px) and (max-width: 1024px){
       margin-bottom: 40px;
    }
+
+   //iPads, Tablets
+   @media screen and (min-width: 481px) and (max-width: 768px){
+      font-size: 2.7rem;
+   }
 }
