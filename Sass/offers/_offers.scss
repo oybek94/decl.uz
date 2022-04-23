@@ -3,23 +3,19 @@
 }
 
 .offers__list {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
-   grid-gap: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   grid-gap: 10px;
    list-style: none;
    margin: 0;
    padding-left: 0;
 }
 
 .offers__item {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   padding: 20px;
-   background: #FFFFFF;
-   border-radius: 8px;
-   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+   width: 24%;
+   min-height: 250px;
+   background: rgba(144, 144, 144, 0.1);
+   border-radius: 5px;
    transition: box-shadow 0.4s ease;
 
    &:hover {
@@ -36,8 +32,54 @@
    }
 }
 
+.offers__link {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   padding: 45px 25px;
+   text-decoration: none;
+   color: $text-color;
+
+   &:hover .offers__item__title,
+   &:active .offers__item__title {
+      z-index: 1;
+      cursor: pointer;
+   }
+
+   &:active .offers__item__bg,
+   &:hover .offers__item__bg {
+      opacity: 0.15;
+   }
+
+   &:hover .offers__svg,
+   &:active .offers__svg {
+      fill: #FFFFFF;
+      z-index: 1;
+   }
+
+}
+
+.offers__item__bg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   opacity: 0;
+   transition: all 0.4s ease;
+}
+
 .offers__item__title {
    font-size: 1.125rem;
-   text-align: center;
    cursor: context-menu;
+   line-height: 150%;
+}
+
+.offers__svg {
+   width: 60px;
+   height: 60px;
 }

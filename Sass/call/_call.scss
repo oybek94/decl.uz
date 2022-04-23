@@ -34,7 +34,7 @@
    text-decoration: none;
    color: $white-color;
    font-weight: bold;
-   transition: background-color 0.4s ease-in-out;
+   transition: all 0.4s ease;
 
    &:hover {
       background-color: $white-color;
@@ -64,4 +64,5 @@
    height: 100%;
    border-radius: 50%;
    border: 2px solid $white-color;
+   transition: all 0.4s ease;
 }
