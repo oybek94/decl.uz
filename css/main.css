@@ -1229,4 +1229,25 @@ img {
   line-height: 150%;
   color: #4F596A;
 }
+
+.contact {
+  background-color: #438BE3;
+}
+
+.contact__container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.contact__list {
+  padding-left: 0;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.contact__svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+}
 /*# sourceMappingURL=main.css.map */
