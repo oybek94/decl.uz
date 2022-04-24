@@ -1,6 +1,11 @@
 .call {
    background-color: $primary-color;
    margin-bottom: 110px;
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      margin-bottom: 50px;
+   }
 }
 
 .call__container {
@@ -77,4 +82,9 @@
    border-radius: 50%;
    border: 2px solid $white-color;
    transition: all 0.4s ease;
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      width: 55px;
+   }
 }

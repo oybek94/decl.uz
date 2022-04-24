@@ -1,5 +1,10 @@
 .how-we-work {
    margin-bottom: 100px;
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      margin-bottom: 50px;
+   }
 }
 
 .how-we-work__list {
@@ -54,6 +59,12 @@
    @media screen and (max-width: 1024px){
       margin-top: 60px;
       margin-bottom: 10px;
+   }
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      width: 70px;
+      height: 70px;
    }
 }
 .line::before {

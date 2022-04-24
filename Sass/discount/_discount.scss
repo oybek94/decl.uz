@@ -1,5 +1,10 @@
 .discount {
    margin-bottom: 100px;
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      margin-bottom: 50px;
+   }
 }
 .discount__wrapper {
    border-radius: 21px;
@@ -26,6 +31,11 @@
       padding: 15px 30px;
       background-size: 150px;
       background-position: top 15px right 30px;
+   }
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      background-size: 100px;
    }
 }
 

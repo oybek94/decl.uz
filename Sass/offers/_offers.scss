@@ -1,5 +1,10 @@
 .offers {
    margin-bottom: 120px;
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      margin-bottom: 60px;
+   }
 }
 
 .offers__list {
@@ -42,8 +47,9 @@
    }
 
    //Mobile devices
-   @media screen and (min-width: 320px) and (max-width: 480px){
+   @media screen and (max-width: 480px){
       width: 100%;
+      min-height: 100px;
    }
 }
 
@@ -92,6 +98,11 @@
    font-size: 1.125rem;
    cursor: context-menu;
    line-height: 150%;
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      font-size: 1.5rem;
+   }
 }
 
 .offers__svg {

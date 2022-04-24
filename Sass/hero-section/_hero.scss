@@ -17,7 +17,7 @@
    }
 
    //iPads, Tablets
-   @media screen and (min-width: 481px) and (max-width: 768px){
+   @media screen and (max-width: 768px){
       background-size: contain;
       background-position: bottom 50px left;
    }
@@ -31,8 +31,13 @@
    margin: 0;
    
    //iPads, Tablets
-   @media screen and (min-width: 481px) and (max-width: 768px){
+   @media screen and (max-width: 768px){
       font-size: 3rem;
+   }
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      padding-bottom: 15px;
    }
 }
 
@@ -52,6 +57,11 @@
    //iPads, Tablets
    @media screen and (min-width: 481px) and (max-width: 768px){
       padding-bottom: 100px;
+   }
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      padding-bottom: 50px;
    }
 }
 

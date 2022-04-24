@@ -1,5 +1,10 @@
 .adventages {
    margin-bottom: 110px;
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      margin-bottom: 50px;
+   }
 }
 
 .adventages__list {
@@ -10,6 +15,16 @@
    margin-top: 0;
    margin-bottom: 0;
    list-style: none;
+
+   //Mobile devices
+   @media screen and (max-width: 1200px){
+      grid-gap: 20px;
+   }
+
+   //Mobile devices
+   @media screen and (max-width: 768px){
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+   }
 }
 
 .adventages__item {
@@ -18,16 +33,28 @@
    padding: 36px 60px 36px 50px;
    min-height: 184px;
    background: rgba(78, 78, 78, 0.05);
-   border-radius: 21px;
+   border-radius: 5px;
 
    //Small screens, laptops
-   @media screen and (min-width: 769px) and (max-width: 1024px){
-      min-height: 84px;
+   @media screen and (max-width: 1024px){
+      min-height: 150px;
+      padding: 25px 30px 25px 25px;
+   }
+   
+
+   //Mobile devices
+   @media screen and (max-width: 480px){
+      flex-direction: column;
    }
 }
 
 .adventages__icon {
    margin-right: 50px;
+
+   //Mobile devices
+   @media screen and (max-width: 1024px){
+      margin-right: 25px;
+   }
 }
 .adventages__icon__src {
    max-width: 64px;
