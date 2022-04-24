@@ -1328,11 +1328,23 @@ img {
   color: #001A49;
 }
 
+@media screen and (max-width: 1024px) {
+  .adventages__title {
+    font-size: 1.7rem;
+  }
+}
+
 .adventages__desc {
   margin: 0;
   font-size: 1rem;
   line-height: 150%;
   color: #4F596A;
+}
+
+@media screen and (max-width: 1024px) {
+  .adventages__desc {
+    font-size: 1.2rem;
+  }
 }
 
 .contact {

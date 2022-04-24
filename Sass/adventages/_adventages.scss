@@ -72,10 +72,20 @@
    font-size: 1.5rem;
    line-height: 125%;
    color: #001A49;
+   
+   //Mobile devices
+   @media screen and (max-width: 1024px){
+      font-size: 1.7rem;
+   }
 }
 .adventages__desc {
    margin: 0;
    font-size: 1rem;
    line-height: 150%;
    color: #4F596A;
+
+   //Mobile devices
+   @media screen and (max-width: 1024px){
+      font-size: 1.2rem;
+   }
 }
