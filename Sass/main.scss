@@ -7,12 +7,14 @@
 @import "container";
 @import "section-title";
 @import "breakpoints";
-@import "hero-section/header";
-@import "hero-section/header__nav";
-@import "hero-section/hero";
-@import "discount/discount";
-@import "how-we-work/how-we-work";
-@import "offers/offers";
-@import "call/call";
-@import "adventages/adventages";
-@import "contact/contact";
+@import "main-page/header";
+@import "main-page/header__nav";
+@import "main-page/hero";
+@import "main-page/discount";
+@import "main-page/how-we-work";
+@import "main-page/offers";
+@import "main-page/call";
+@import "main-page/adventages";
+@import "main-page/contact";
+
+@import "clearance/clearance"
