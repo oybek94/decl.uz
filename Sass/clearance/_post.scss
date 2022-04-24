@@ -1,0 +1,32 @@
+.blog-post__container {
+   display: flex;
+   flex-direction: column;
+   padding-left: 200px;
+   padding-right: 200px;
+
+   //Desktops, large screens
+   @media screen and (max-width: 1200px){
+      padding: 0 20px;
+   }
+}
+.post__title {
+   margin-top: 50px;
+   margin-bottom: 50px;
+   text-align: center;
+}
+
+.post-thumb {
+   display: flex;
+   max-height: 500px;
+   margin-top: 100px;
+}
+.post-thumb__image {
+   object-fit: cover;
+   object-position: 50% 50%;
+}
+
+.post__text {
+   font-size: 1.5rem;
+   text-align: justify;
+   line-height: 150%;
+}
