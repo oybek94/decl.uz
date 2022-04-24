@@ -1,47 +1,85 @@
 .contact {
    background-color: $primary-color;
-}
-
-.contact__container {
    padding-top: 48px;
    padding-bottom: 48px;
 }
 
+.contact > .section-title {
+   color: #f3f3f3;
+}
+
+.contact__container {
+   display: flex;
+   align-items: center;
+}
+
 
 .contact__list {
+   flex: 1 0 50%;
+   margin-top: 0;
+   margin-bottom: 0;
    padding-left: 0;
    list-style: none;
    font-size: 1.5rem;
-}
-
-.tel {
-
 }
 
 .contact__svg {
    fill: #fff;
    width: 24px;
    height: 24px;
+   margin-right: 10px;
 }
-.tel__link {
+
+.contact__item {
+   margin-bottom: 25px;
+
+   &:hover .contact__item__link{
+      color: #fdcc50;
+   }
+
+   &:hover .contact__svg {
+      fill: #fdcc50;
+   }
 }
-.e-mail {
+
+.contact__item__link {
+   color: #f3f3f3;
+   text-decoration: none;
+   margin: 0;
 }
-.e-mail__link {
-}
+
 .address {
+   display: flex;
 }
 .address__link {
+   line-height: 150%;
+   max-width: 500px;
+   cursor: pointer;
 }
+
 .social {
+   display: flex;
+   justify-content: space-between;
+   width: 170px;
 }
-.social__link {
+
+.social__link > svg {
+   width: 40px;
+   height: 40px;
+   fill: #fff;
 }
+
 .telegram__svg {
 }
 .whatsapp__svg {
+   &:hover {
+      fill: #25D366;
+   }
 }
 .intagram__svg {
+   &:hover {
+      fill: #5851DB;
+   }
 }
 .contact__map {
 }
