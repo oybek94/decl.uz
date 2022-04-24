@@ -11,6 +11,11 @@
 .contact__container {
    display: flex;
    align-items: center;
+
+   //Laptops
+   @media screen and (max-width: 1200px){
+      flex-direction: column;
+   }
 }
 
 
@@ -18,9 +23,16 @@
    flex: 1 0 50%;
    margin-top: 0;
    margin-bottom: 0;
+   margin-right: 20px;
    padding-left: 0;
    list-style: none;
    font-size: 1.5rem;
+
+    //Laptops
+    @media screen and (max-width: 1200px){
+      margin-right: 0;
+      margin-bottom: 50px;
+   }
 }
 
 .contact__svg {
@@ -82,6 +94,9 @@
    }
 }
 .contact__map {
+   width: 100%;
 }
+
 .contact__map__link {
+   width: 100%;
 }

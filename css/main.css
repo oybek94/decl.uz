@@ -646,7 +646,7 @@ img {
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .discount__wrapper {
     padding: 15px 30px;
     background-size: 150px;
@@ -670,7 +670,7 @@ img {
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .discount__title {
     margin-bottom: 5px;
     font-size: 2rem;
@@ -1085,7 +1085,7 @@ img {
   padding-bottom: 48px;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .call__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1111,7 +1111,7 @@ img {
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .call__title {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1249,15 +1249,32 @@ img {
           align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .contact__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact__list {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 20px;
   padding-left: 0;
   list-style: none;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact__list {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
 }
 
 .contact__svg {
@@ -1319,5 +1336,13 @@ img {
 
 .intagram__svg:hover {
   fill: #5851DB;
+}
+
+.contact__map {
+  width: 100%;
+}
+
+.contact__map__link {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
