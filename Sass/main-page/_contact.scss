@@ -45,19 +45,21 @@
 .contact__item {
    margin-bottom: 25px;
 
-   &:hover .contact__item__link{
-      color: #fdcc50;
-   }
 
-   &:hover .contact__svg {
-      fill: #fdcc50;
-   }
 }
 
 .contact__item__link {
    color: #f3f3f3;
    text-decoration: none;
    margin: 0;
+   
+   &:hover {
+      color: #fdcc50;
+   }
+
+   &:hover.contact__svg {
+      fill: #fdcc50;
+   }
 }
 
 .address {
