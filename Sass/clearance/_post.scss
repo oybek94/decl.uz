@@ -103,12 +103,15 @@
    border-radius: 5px;
    box-shadow: 0 4px 27px rgba(60, 76, 121, 0.15);
    margin-bottom: 40px;
+   padding-left: 0;
 }
 .table-post__item {
    position: relative;
    display: flex;
    align-items: center;
+   list-style: none;
    padding: 15px;
+   padding-left: 30px;
    font-size: 1.2rem;
    border-bottom: 1px solid #e4edf5;
 
@@ -118,6 +121,7 @@
       align-items: center;
       width: 30px;
       height: 30px;
+      margin-right: 20px;
       top: 0;
       left: 0;
       background-repeat: no-repeat;
