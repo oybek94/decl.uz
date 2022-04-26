@@ -1748,6 +1748,47 @@ img {
   }
 }
 
+.table-post__list {
+  border: 1px solid #e4edf5;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 27px rgba(60, 76, 121, 0.15);
+          box-shadow: 0 4px 27px rgba(60, 76, 121, 0.15);
+  margin-bottom: 40px;
+}
+
+.table-post__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #e4edf5;
+}
+
+.table-post__item::before {
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.table-post__item.medal ~ .table-post__item::before {
+  background-image: url(/img/medal.png);
+}
+
 .sidebar {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 23%;
@@ -1813,5 +1854,9 @@ img {
 .sidebar__item__link {
   text-decoration: none;
   color: #438BE3;
+}
+
+.selected {
+  color: #fdcc50;
 }
 /*# sourceMappingURL=main.css.map */
