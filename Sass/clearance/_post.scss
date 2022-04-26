@@ -127,18 +127,49 @@
       background-repeat: no-repeat;
       background-size: contain;
    }
-   
-   &.medal ~ &::before {
-      background-image: url(/img/medal.png);
-   }
 }
 
+.table-post__item.medal.table-post__item::before {
+   background-image: url(/img/medal.png);
+}
 
-.medal {
+.table-post__item.shield.table-post__item::before {
+   background-image: url(/img/shield.png);
 }
-.shield {
+
+.table-post__item.clock.table-post__item::before {
+   background-image: url(/img/clock.png);
 }
-.clock {
+
+.table-post__item.map.table-post__item::before {
+   background-image: url(/img/map.png);
 }
-.map {
+
+.table-post__item.container-png.table-post__item::before {
+   background-image: url(/img/container.png);
 }
+
+.table-post__item.skoroport.table-post__item::before {
+   background-image: url(/img/skoroport.png);
+}
+
+.table-post__item.dangerous.table-post__item::before {
+   background-image: url(/img/dangerous.png);
+}
+
+.table-post__item.sborniy-gruz.table-post__item::before {
+   background-image: url(/img/sborn-gruzy.png);
+}
+
+.table-post__item.oborud.table-post__item::before {
+   background-image: url(/img/oborud.png);
+}
+
+.table-post__item.sypuchie.table-post__item::before {
+   background-image: url(/img/sypuchie.png);
+}
+
+.table-post__item.negabarit.table-post__item::before {
+   background-image: url(/img/negabarit.png);
+}
+

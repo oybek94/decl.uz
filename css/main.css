@@ -1789,8 +1789,48 @@ img {
   background-size: contain;
 }
 
-.table-post__item.medal ~ .table-post__item::before {
+.table-post__item.medal.table-post__item::before {
   background-image: url(/img/medal.png);
+}
+
+.table-post__item.shield.table-post__item::before {
+  background-image: url(/img/shield.png);
+}
+
+.table-post__item.clock.table-post__item::before {
+  background-image: url(/img/clock.png);
+}
+
+.table-post__item.map.table-post__item::before {
+  background-image: url(/img/map.png);
+}
+
+.table-post__item.container-png.table-post__item::before {
+  background-image: url(/img/container.png);
+}
+
+.table-post__item.skoroport.table-post__item::before {
+  background-image: url(/img/skoroport.png);
+}
+
+.table-post__item.dangerous.table-post__item::before {
+  background-image: url(/img/dangerous.png);
+}
+
+.table-post__item.sborniy-gruz.table-post__item::before {
+  background-image: url(/img/sborn-gruzy.png);
+}
+
+.table-post__item.oborud.table-post__item::before {
+  background-image: url(/img/oborud.png);
+}
+
+.table-post__item.sypuchie.table-post__item::before {
+  background-image: url(/img/sypuchie.png);
+}
+
+.table-post__item.negabarit.table-post__item::before {
+  background-image: url(/img/negabarit.png);
 }
 
 .sidebar {
@@ -1858,6 +1898,12 @@ img {
 .sidebar__item__link {
   text-decoration: none;
   color: #438BE3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sidebar__item__link:hover {
+  color: #fdcc50;
 }
 
 .selected {

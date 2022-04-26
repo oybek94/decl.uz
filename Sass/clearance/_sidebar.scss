@@ -55,6 +55,11 @@
 .sidebar__item__link {
    text-decoration: none;
    color: $primary-color;
+   transition: all 0.3s ease;
+
+   &:hover {
+      color: #fdcc50;
+   }
 }
 
 .selected {
