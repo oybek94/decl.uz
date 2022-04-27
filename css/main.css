@@ -1834,7 +1834,7 @@ img {
 }
 
 .post__text__link {
-  color: #FDCC50;
+  color: #fb3141;
 }
 
 .post__text__link:hover {
@@ -1905,16 +1905,16 @@ img {
 
 .sidebar__item__link {
   text-decoration: none;
-  color: #438BE3;
+  color: #060606;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .sidebar__item__link:hover {
-  color: #ff6000;
+  color: #fb3141;
 }
 
 .selected {
-  color: #ff6000;
+  color: #fb3141;
 }
 /*# sourceMappingURL=main.css.map */

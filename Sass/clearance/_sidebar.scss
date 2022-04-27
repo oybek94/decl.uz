@@ -54,14 +54,14 @@
 
 .sidebar__item__link {
    text-decoration: none;
-   color: $primary-color;
+   color: #060606;
    transition: all 0.3s ease;
 
    &:hover {
-      color: #ff6000;
+      color: #fb3141;
    }
 }
 
 .selected {
-   color: #ff6000;
+   color: #fb3141;
 }
