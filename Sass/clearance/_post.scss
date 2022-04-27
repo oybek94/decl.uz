@@ -173,3 +173,11 @@
    background-image: url(/img/negabarit.png);
 }
 
+.post__text__link {
+   color: #FDCC50;
+
+
+   &:hover {
+      text-decoration: none;
+   }
+}

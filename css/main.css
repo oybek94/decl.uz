@@ -1833,6 +1833,14 @@ img {
   background-image: url(/img/negabarit.png);
 }
 
+.post__text__link {
+  color: #FDCC50;
+}
+
+.post__text__link:hover {
+  text-decoration: none;
+}
+
 .sidebar {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 23%;
