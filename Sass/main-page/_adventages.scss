@@ -32,8 +32,10 @@
    align-items: flex-start;
    padding: 36px 60px 36px 50px;
    min-height: 184px;
-   background: rgba(78, 78, 78, 0.05);
-   border-radius: 5px;
+   background: $primary-color;
+   border-radius: 25px;
+   box-shadow: 0px 5px 27px rgba(26, 42, 137, 0.09);
+   transition: transform 0.4s ease;
 
    //Small screens, laptops
    @media screen and (max-width: 1024px){
@@ -41,10 +43,13 @@
       padding: 25px 30px 25px 25px;
    }
    
-
    //Mobile devices
    @media screen and (max-width: 480px){
       flex-direction: column;
+   }
+
+   &:hover {
+      transform: scale(1.05);
    }
 }
 
@@ -59,10 +64,11 @@
 .adventages__icon__src {
    max-width: 64px;
    height: 64px;
+   fill: #fff;
 }
 
 .adventages__text {
-   max-width: 465px;  
+   max-width: 465px;
 }
 
 .adventages__title {
@@ -71,7 +77,7 @@
    font-weight: bold;
    font-size: 1.5rem;
    line-height: 125%;
-   color: #001A49;
+   color: #fff;  
    
    //Mobile devices
    @media screen and (max-width: 1024px){
@@ -82,7 +88,7 @@
    margin: 0;
    font-size: 1rem;
    line-height: 150%;
-   color: #4F596A;
+   color: rgb(230, 230, 230);  
 
    //Mobile devices
    @media screen and (max-width: 1024px){

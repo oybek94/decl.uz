@@ -395,7 +395,7 @@ body {
   padding: 0;
   font-family: "Cambria", sans-serif;
   font-weight: normal;
-  color: #57606A;
+  color: #060606;
 }
 
 img {
@@ -509,7 +509,7 @@ img {
           align-items: center;
   font-size: 2.25rem;
   text-decoration: none;
-  color: #438be3;
+  color: #2573fb;
   font-weight: bold;
 }
 
@@ -526,17 +526,17 @@ img {
 .header__tel-button {
   position: relative;
   padding: 15px;
-  border: 2px solid #438be3;
+  border: 2px solid #2573fb;
   border-radius: 33px;
   text-decoration: none;
-  color: #438be3;
+  color: #2573fb;
   font-weight: bold;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
 .header__tel-button:hover {
-  background-color: #438be3;
+  background-color: #2573fb;
   color: #fff;
   text-align: center;
   -webkit-box-shadow: 7px 9px 35px -6px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -576,7 +576,7 @@ img {
   font-weight: bold;
   font-size: 4.375rem;
   line-height: 129%;
-  color: #272D4E;
+  color: #2573fb;
   margin: 0;
 }
 
@@ -622,7 +622,7 @@ img {
 .button {
   padding: 20px 50px;
   border-radius: 60px;
-  background-color: #438be3;
+  background-color: #2573fb;
   color: #ffffff;
   font-weight: bold;
   font-size: 1.625rem;
@@ -950,7 +950,7 @@ img {
   font-size: 3.75rem;
   font-weight: 500;
   line-height: 170%;
-  color: #438be3;
+  color: #2573fb;
 }
 
 .how-we-work__item__title {
@@ -994,13 +994,9 @@ img {
 }
 
 .offers {
-  margin-bottom: 120px;
-}
-
-@media screen and (max-width: 480px) {
-  .offers {
-    margin-bottom: 60px;
-  }
+  padding-bottom: 50px;
+  padding-top: 30px;
+  background-color: #f0f1f9;
 }
 
 .offers__list {
@@ -1009,27 +1005,35 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  grid-gap: 10px;
+  grid-gap: 18px;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
+@media screen and (max-width: 1440px) {
+  .offers__list {
+    grid-gap: 11px;
+  }
+}
+
 .offers__item {
   width: 24%;
   min-height: 250px;
-  background: rgba(144, 144, 144, 0.1);
-  border-radius: 5px;
-  -webkit-transition: -webkit-box-shadow 0.4s ease;
-  transition: -webkit-box-shadow 0.4s ease;
-  transition: box-shadow 0.4s ease;
-  transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
+  background: #FFFFFF;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 27px rgba(26, 42, 137, 0.09);
+          box-shadow: 0px 5px 27px rgba(26, 42, 137, 0.09);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .offers__item:hover {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  background-color: #438be3;
+  background-color: #2573fb;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .offers__item:hover .offers__item__title {
@@ -1073,7 +1077,7 @@ img {
   height: 100%;
   padding: 45px 25px;
   text-decoration: none;
-  color: #57606A;
+  color: #060606;
 }
 
 .offers__link:hover .offers__item__title,
@@ -1121,13 +1125,13 @@ img {
 .offers__svg {
   width: 60px;
   height: 60px;
-  fill: #438be3;
+  fill: #2573fb;
 }
 
 .stats {
-  margin-bottom: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(67, 139, 227, 0.95)), to(rgba(67, 139, 227, 0.9))), url(/img/numbers-bg.jpg) left 50% top 40%/cover no-repeat;
-  background: linear-gradient(rgba(67, 139, 227, 0.95), rgba(67, 139, 227, 0.9)), url(/img/numbers-bg.jpg) left 50% top 40%/cover no-repeat;
+  margin-bottom: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2573fbde), to(#2573fbdc)), url(/img/numbers-bg.jpg) left 50% top 40%/cover no-repeat;
+  background: linear-gradient(#2573fbde, #2573fbdc), url(/img/numbers-bg.jpg) left 50% top 40%/cover no-repeat;
 }
 
 .stats__list {
@@ -1261,8 +1265,14 @@ img {
           align-items: flex-start;
   padding: 36px 60px 36px 50px;
   min-height: 184px;
-  background: rgba(78, 78, 78, 0.05);
-  border-radius: 5px;
+  background: #2573fb;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 5px 27px rgba(26, 42, 137, 0.09);
+          box-shadow: 0px 5px 27px rgba(26, 42, 137, 0.09);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1281,6 +1291,11 @@ img {
   }
 }
 
+.adventages__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .adventages__icon {
   margin-right: 50px;
 }
@@ -1294,6 +1309,7 @@ img {
 .adventages__icon__src {
   max-width: 64px;
   height: 64px;
+  fill: #fff;
 }
 
 .adventages__text {
@@ -1306,7 +1322,7 @@ img {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 125%;
-  color: #001A49;
+  color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1319,7 +1335,7 @@ img {
   margin: 0;
   font-size: 1rem;
   line-height: 150%;
-  color: #4F596A;
+  color: #e6e6e6;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1329,7 +1345,9 @@ img {
 }
 
 .preview {
-  margin-bottom: 100px;
+  background-color: #f0f1f9;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .preview__container {
@@ -1365,6 +1383,8 @@ img {
 
 .main-preview {
   width: 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1372,6 +1392,11 @@ img {
     width: auto;
     margin-bottom: 75px;
   }
+}
+
+.main-preview:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .main-preview__wrapper {
@@ -1516,8 +1541,17 @@ img {
   }
 }
 
+.mini-preview__item:hover .mini-preview__item__img {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
 .mini-preview__item__img {
   margin-right: 50px;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1592,7 +1626,7 @@ img {
 }
 
 .contact {
-  background-color: #438be3;
+  background-color: #2573fb;
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -2078,11 +2112,19 @@ img {
 }
 
 .post__text__link {
+  text-decoration: none;
   color: #fb3141;
+  background: -webkit-gradient(linear, left top, right top, from(#fb3141), to(#fb3141)), -webkit-gradient(linear, left top, right top, from(red), color-stop(#ff00b4), to(#0064c8));
+  background: linear-gradient(to right, #fb3141, #fb3141), linear-gradient(to right, red, #ff00b4, #0064c8);
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: background-size 400ms;
+  transition: background-size 400ms;
 }
 
 .post__text__link:hover {
-  text-decoration: none;
+  background-size: 0 2px, 100% 2px;
 }
 
 .sidebar {

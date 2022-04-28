@@ -1,5 +1,7 @@
 .preview {
-   margin-bottom: 100px;
+   background-color: $section-bg-color;
+   padding-top: 50px;
+   padding-bottom: 50px;
 }
 
 .preview__container {
@@ -25,11 +27,16 @@
 
 .main-preview {
    width: 100%;
+   transition: all 0.4s ease;
 
    //Laptops
    @media screen and (max-width: 1024px){
       width: auto; 
       margin-bottom: 75px;
+   }
+
+   &:hover {
+      transform: scale(1.02);
    }
 }
 
@@ -114,6 +121,7 @@
 .mini-preview__item {
    max-width: 600px;
    display: flex;
+   
 
    &:not(:last-child) {
       margin-bottom: 15px;
@@ -141,8 +149,14 @@
    }
 }
 
+.mini-preview__item:hover .mini-preview__item__img {
+   transform: scale(1.03);
+}
+
 .mini-preview__item__img {
    margin-right: 50px;
+   transition: transform 0.4s ease;
+   
 
    //Laptops
    @media screen and (max-width: 1024px){
