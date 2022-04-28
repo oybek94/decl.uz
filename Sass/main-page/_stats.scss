@@ -1,0 +1,78 @@
+.stats {
+   margin-bottom: 100px;
+   background: linear-gradient(rgba(67, 139, 227,0.95), rgba(67, 139, 227,0.9)), url(/img/numbers-bg.jpg) left 50% top 40% / cover no-repeat;
+}
+
+.stats__container {
+}
+.stats__list {
+   display: flex;
+   justify-content: space-between;
+   padding: 50px 0px;
+   list-style: none;
+   color: #fff;
+   margin: 0;
+
+   //Small screens, laptops
+   @media screen and (max-width: 1024px){
+      flex-wrap: wrap;
+   }
+
+   
+   @media screen and (max-width: 600px){
+      flex-direction: column;
+   }
+}
+
+.stats__item {
+   flex: 1 0 24%;
+   justify-content: space-between;
+   padding-left: 70px;
+   position: relative;
+
+   &:not(:last-child) {
+      margin-right: 20px;
+   }
+
+   &::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 5px;
+      left: 0px;
+   }
+
+   //Small screens, laptops
+   @media screen and (max-width: 1024px){
+      margin-bottom: 30px;
+   }
+
+}
+
+.stats__item.year.stats__item::before {
+   background-image: url(/img/calendar.svg);
+}
+
+.stats__item.docs.stats__item::before {
+   background-image: url(/img/docs.svg);
+}
+
+.stats__item.clients.stats__item::before {
+   background-image: url(/img/clients.svg);
+}
+
+.stats__item.monthly.stats__item::before {
+   background-image: url(/img/kilo.svg);
+}
+
+.stats__number {
+   font-size: 3.2rem;
+}
+
+.stats__desc {
+   font-size: 1.2rem;
+   margin-bottom: 0;
+}
