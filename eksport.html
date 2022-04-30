@@ -44,11 +44,30 @@
 <body>
    <header class="clearance__header">
       <div class="container header__container">
-         <nav class="header__nav clearance__header__nav">
+         <nav class="header__nav" data-aos="fade-down">
             <a class="header__nav__logo clearance__header__nav__logo" href="/index.html">
-               <img class="header__nav__logo__img" src="/img/Logo komil psd.png" width="86" height="80"
+               <img class="header__nav__logo__img" src="/img/komil-logo-white.svg" width="86" height="80"
                   alt="Декларант в фергане"> МЧФ "KOMIL"
             </a>
+
+            <button type="button" class="burger" id="burger">
+               <span class="burger-line white-bg"></span>
+               <span class="burger-line white-bg"></span>
+               <span class="burger-line white-bg"></span>
+               <span class="burger-line white-bg"></span>
+            </button>
+            <div id="menu" class="menu">
+               <ul class="header__nav__list">
+                  <li class="header__nav__item"><a class="header__nav__link white" href="decl.uz">ГЛАВНАЯ</a></li>
+                  <li class="header__nav__item"><a class="header__nav__link white" href="/about.html">О КОМПАНИИ</a>
+                  </li>
+                  <li class="header__nav__item"><a class="header__nav__link white select" href="/#services">УСЛУГИ</a>
+                  </li>
+                  <li class="header__nav__item"><a class="header__nav__link white" href="/blog.html">БЛОГ</a></li>
+                  <li class="header__nav__item"><a class="header__nav__link white" href="/faq.html">FAQ</a></li>
+                  <li class="header__nav__item"><a class="header__nav__link white" href="#contacts">КОНТАКТЫ</a></li>
+               </ul>
+            </div>
 
          </nav>
       </div>
@@ -438,6 +457,7 @@
       </div>
    </footer>
 
+   <script src="/js/main.js"></script>
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script>
       AOS.init();

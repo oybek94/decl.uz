@@ -584,6 +584,14 @@ img {
   }
 }
 
+.white {
+  color: #e7e9e6;
+}
+
+.white:hover {
+  color: #fdcc50;
+}
+
 .burger {
   position: relative;
   display: none;
@@ -654,6 +662,10 @@ img {
           transform: rotate(-45deg);
 }
 
+.white-bg {
+  background: #e7e9e6;
+}
+
 @media screen and (max-width: 768px) {
   .menu {
     width: 100%;
@@ -689,6 +701,10 @@ img {
     gap: 0.75rem;
     padding: 1rem 0;
   }
+}
+
+.select {
+  color: #fdcc50;
 }
 
 .hero {
