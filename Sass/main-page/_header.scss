@@ -5,15 +5,13 @@
    margin-bottom: 100px;
 
      //Small screens, laptops
-     @media screen and (min-width: 769px) and (max-width: 1024px){
+     @media screen and (max-width: 1024px){
       padding-top: 20px;
       padding-bottom: 20px;
    }
 
       //Mobile devices
       @media screen and (max-width: 480px){
-         padding-top: 20px;
-         padding-bottom: 20px;
          margin-bottom: 50px;
       }
 }

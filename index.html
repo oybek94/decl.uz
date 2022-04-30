@@ -50,14 +50,23 @@
                   alt="Декларант в фергане"> МЧФ "KOMIL"
             </a>
 
-            <ul class="header__nav__list">
-               <li class="header__nav__item"><a class="header__nav__link" href="decl.uz">ГЛАВНАЯ</a></li>
-               <li class="header__nav__item"><a class="header__nav__link" href="decl.uz/about.html">О КОМПАНИИ</a></li>
-               <li class="header__nav__item"><a class="header__nav__link" href="decl.uz/#services">УСЛУГИ</a></li>
-               <li class="header__nav__item"><a class="header__nav__link" href="decl.uz/blog.html">БЛОГ</a></li>
-               <li class="header__nav__item"><a class="header__nav__link" href="decl.uz/faq.html">FAQ</a></li>
-               <li class="header__nav__item"><a class="header__nav__link" href="#contacts">КОНТАКТЫ</a></li>
-            </ul>
+            <button type="button" class="burger" id="burger">
+               <span class="burger-line"></span>
+               <span class="burger-line"></span>
+               <span class="burger-line"></span>
+               <span class="burger-line"></span>
+            </button>
+            <div id="menu" class="menu">
+               <ul class="header__nav__list">
+                  <li class="header__nav__item"><a class="header__nav__link" href="decl.uz">ГЛАВНАЯ</a></li>
+                  <li class="header__nav__item"><a class="header__nav__link" href="decl.uz/about.html">О КОМПАНИИ</a>
+                  </li>
+                  <li class="header__nav__item"><a class="header__nav__link" href="decl.uz/#services">УСЛУГИ</a></li>
+                  <li class="header__nav__item"><a class="header__nav__link" href="decl.uz/blog.html">БЛОГ</a></li>
+                  <li class="header__nav__item"><a class="header__nav__link" href="decl.uz/faq.html">FAQ</a></li>
+                  <li class="header__nav__item"><a class="header__nav__link" href="#contacts">КОНТАКТЫ</a></li>
+               </ul>
+            </div>
 
          </nav>
 
@@ -1225,6 +1234,7 @@
       </div>
    </section>
 
+   <script src="/js/main.js"></script>
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script>
       AOS.init({
