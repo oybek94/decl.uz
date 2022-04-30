@@ -523,24 +523,23 @@ img {
   padding-right: 10px;
 }
 
-.header__tel-button {
-  position: relative;
-  padding: 15px;
-  border: 2px solid #2573fb;
-  border-radius: 33px;
-  text-decoration: none;
-  color: #2573fb;
-  font-weight: bold;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+.header__nav__list {
+  list-style: none;
 }
 
-.header__tel-button:hover {
-  background-color: #2573fb;
-  color: #fff;
-  text-align: center;
-  -webkit-box-shadow: 7px 9px 35px -6px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-          box-shadow: 7px 9px 35px -6px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+.header__nav__item {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.header__nav__link {
+  text-decoration: none;
+  color: #2573fb;
+  font-size: 1.2rem;
+}
+
+.header__nav__link:hover {
+  color: #fb3141;
 }
 
 .hero {
@@ -1762,7 +1761,7 @@ img {
 }
 
 .clearance__header__nav__logo {
-  color: #fff;
+  color: #e7e9e6;
 }
 
 .clearance__hero {
