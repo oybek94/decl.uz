@@ -63,4 +63,10 @@
 .contacts-post__item__qr-code {
    max-width: 250px;
    margin-bottom: 50px;
+   transition: all 1s ease;
+
+   &:hover {
+      transform: scale(1.3);
+      cursor: none;
+   }
 }
