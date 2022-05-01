@@ -2102,6 +2102,7 @@ img {
 }
 
 .post {
+  width: 100%;
   padding: 60px 70px;
   background-color: #fff;
   border-radius: 15px;
@@ -2657,5 +2658,94 @@ img {
   .banner-info__stats__item__desc {
     font-size: 1.3rem;
   }
+}
+
+.contacts__header {
+  padding-top: 20px;
+  padding-bottom: 150px;
+  background: #090979;
+  background: -webkit-gradient(linear, left top, right top, from(#090979), color-stop(32%, #0b00c4), to(#2573fb));
+  background: linear-gradient(90deg, #090979 0%, #0b00c4 32%, #2573fb 100%);
+}
+
+@media screen and (max-width: 650px) {
+  .contacts__header {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contacts__container > .post {
+    max-width: 100%;
+  }
+}
+
+.contacts-post__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-post__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contacts-post__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 32%;
+          flex: 1 0 32%;
+}
+
+.contacts-post__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-post__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.contacts-post__item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-post__item {
+    width: 100%;
+  }
+}
+
+.contacts-post__item__title {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.contacts-post__item__qr-code {
+  max-width: 250px;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */
