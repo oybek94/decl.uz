@@ -65,21 +65,24 @@
    }
 }
 
-.button {
-   padding: 20px 50px;
-   border-radius: 60px;
-   background-color: $primary-color;
-   color: $white-color;
 
-   font-weight: bold;
-   font-size: 1.625rem;
-   line-height: 31px;
+.btn-grad {background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 20px 45px;
+   font-size: 1.5rem;
    text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 20px;
    text-decoration: none;
-   transition: background-color 0.4s ease;
-   box-shadow: 7px 9px 35px -6px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+ }
 
-   &:hover {
-      background-color: rgba(67, 139, 227, 0.9);
-   }
-}
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }

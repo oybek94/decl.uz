@@ -32,7 +32,8 @@
    align-items: flex-start;
    padding: 36px 60px 36px 50px;
    min-height: 184px;
-   background: $primary-color;
+   background-image: linear-gradient(to left, #2573fb, #2067e4, #1b5acc, #164fb6, #0f43a0);
+   background-position: top -100px center;
    border-radius: 25px;
    box-shadow: 0px 5px 27px rgba(26, 42, 137, 0.09);
    transition: transform 0.4s ease;
