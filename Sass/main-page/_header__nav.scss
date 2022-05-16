@@ -1,14 +1,19 @@
+.header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+   background-color: #fff;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
 .header__nav {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   align-items: center;
+   
    width: 100%;
    height: auto;
    margin: 0 auto;
-   margin-bottom: 150px;
-
-
+   padding: 10px 0;
+  
    //Laptops
    @media screen and (min-width: 1201px) and (max-width: 1440px){
       margin-bottom: 70px;
@@ -23,6 +28,17 @@
    @media screen and (max-width: 768px){
       margin-bottom: 40px;
    }
+}
+
+.header__nav__container {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+nav.header__nav.aos-init.aos-animate {
+   margin-bottom: 0;
 }
 
 .header__nav__logo {

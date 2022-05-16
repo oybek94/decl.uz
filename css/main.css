@@ -447,13 +447,6 @@ img {
   }
 }
 
-.header {
-  background-color: rgba(144, 144, 144, 0.1);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-bottom: 100px;
-}
-
 @media screen and (max-width: 1024px) {
   .header {
     padding-top: 20px;
@@ -467,22 +460,21 @@ img {
   }
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
 .header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   height: auto;
   margin: 0 auto;
-  margin-bottom: 150px;
+  padding: 10px 0;
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1440px) {
@@ -501,6 +493,24 @@ img {
   .header__nav {
     margin-bottom: 40px;
   }
+}
+
+.header__nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.header__nav.aos-init.aos-animate {
+  margin-bottom: 0;
 }
 
 .header__nav__logo {
@@ -708,7 +718,11 @@ img {
 }
 
 .hero {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  padding-top: 40px;
   padding-bottom: 150px;
+  background-color: rgba(144, 144, 144, 0.1);
   background-image: url("/img/location.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -740,7 +754,7 @@ img {
   font-weight: bold;
   font-size: 4.375rem;
   line-height: 129%;
-  color: #2573fb;
+  color: #060606;
   margin: 0;
 }
 
@@ -760,7 +774,7 @@ img {
   max-width: 610px;
   font-size: 1.5rem;
   line-height: 125%;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   margin: 0;
 }
 
@@ -784,11 +798,7 @@ img {
 }
 
 .btn-grad {
-  background-image: -webkit-gradient(linear, left top, right top, from(#00c6ff), color-stop(51%, #0072ff), to(#00c6ff));
-  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
-}
-
-.btn-grad {
+  background-color: #6699f2;
   margin: 10px;
   padding: 20px 45px;
   font-size: 1.5rem;
@@ -805,8 +815,7 @@ img {
 }
 
 .btn-grad:hover {
-  background-position: right center;
-  /* change the direction of the change here */
+  background-color: #2573fb;
   color: #fff;
   text-decoration: none;
 }
