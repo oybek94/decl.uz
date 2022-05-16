@@ -218,3 +218,41 @@ nav.header__nav.aos-init.aos-animate {
 .select {
    color: #fdcc50;
 }
+
+
+
+.header__top {
+   background-color: $primary-color;
+   color: #fff;
+}
+
+.header__top__list {
+   display: flex;
+   align-items: center;
+   margin: 0;
+   list-style: none;
+   padding: 10px 0;
+}
+
+.header__top__item {
+   display: flex;
+   align-items: center;
+   margin-right: 30px;
+
+}
+
+.tel__svg {
+   width: 15px;
+   height: 15px;
+   fill: #fff;
+   margin-right: 5px;
+}
+
+.add-text {
+   margin-left: 10px;
+   padding: 3px 8px;
+   background-color: rgba(34, 34, 34, 0.169);
+   color: #e7e9e6;
+   font-size: 0.8rem;
+   border-radius: 5px;
+}
